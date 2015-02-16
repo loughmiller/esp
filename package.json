@@ -6,8 +6,9 @@
   "scripts": {
     "env": "env",
     "lint": "git ls-files | grep \\.js$ | xargs -L1 jshint",
-    "test": "mocha",
-    "pretest": "npm run lint"
+    "test": "istanbul cover _mocha -- -R spec",
+    "pretest": "npm run lint",
+    "posttest": "istanbul check-coverage --branches 100 --functions 100 --statements 100 --lines 100"
   },
   "repository": {
     "type": "git",

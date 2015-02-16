@@ -1,0 +1,36 @@
+{
+  "name": "enm",
+  "version": "0.0.1",
+  "description": "Empty Node Module",
+  "main": "index.js",
+  "scripts": {
+    "env": "env",
+    "lint": "git ls-files | grep \\.js$ | xargs -L1 jshint",
+    "test": "mocha",
+    "pretest": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loughmiller/enm.git"
+  },
+  "keywords": [
+    "empty",
+    "node",
+    "module",
+    "mocha"
+  ],
+  "author": "Scott Loughmiller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/loughmiller/enm/issues"
+  },
+  "homepage": "https://github.com/loughmiller/enm",
+  "dependencies": {
+    "underscore": "1.7.0"
+  },
+  "devDependencies": {
+    "mocha": "2.1.0",
+    "jshint": "2.6.0",
+    "istanbul": "0.3.5"
+  }
+}

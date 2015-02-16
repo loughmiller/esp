@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "env": "env",
+    "setup": "ln -s ../../tools/pre-push .git/hooks/",
     "lint": "git ls-files | grep \\.js$ | xargs -L1 jshint",
     "test": "istanbul cover _mocha -- -R spec",
     "pretest": "npm run lint",

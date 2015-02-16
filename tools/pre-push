@@ -1,0 +1,30 @@
+#!/bin/sh
+#
+# Run unittests before push
+
+pop=false
+pass=true
+
+# Use the version that's about to be pushed
+if ! git diff-index --quiet HEAD --; then
+    echo "WARNING: stashing uncommitted changes"
+    sleep 3
+    pop=true
+    git stash -q
+fi
+
+if ! npm test; then
+    echo "lint or tests failed"
+    pass=false
+fi
+
+if $pop; then
+    git stash pop
+    echo "stash popped"
+fi
+
+if $pass; then
+    exit 0
+else
+    exit 1
+fi

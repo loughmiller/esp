@@ -1,0 +1,33 @@
+{
+  "node"      : true,
+
+  "bitwise"   : true,
+  "camelcase" : true,
+  "curly"     : true,
+  "eqeqeq"    : true,
+  "freeze"    : true,
+  "immed"     : true,
+  "newcap"    : true,
+  "noarg"     : true,
+  "noempty"   : true,
+  "nonew"     : true,
+  "undef"     : true,
+  "strict"    : true,
+  "trailing"  : true,
+  "unused"    : true,
+  "indent"    : 2,
+  "quotmark"  : "single",
+  "maxlen"    : 80,
+  "white"     : true,
+
+  "expr"      : true,  /* for chai expect(x).to.be.true */
+
+  "globals" : {
+
+    /* MOCHA */
+    "suite"     : false,
+    "test"      : false,
+    "setup"     : false,
+    "teardown"  : false
+  }
+}

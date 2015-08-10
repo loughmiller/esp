@@ -1,8 +1,8 @@
 {
-  "name": "enm",
+  "name": "esp",
   "version": "0.0.1",
-  "description": "Empty Node Module",
-  "main": "index.js",
+  "description": "Empty Server Project",
+  "main": "server.js",
   "scripts": {
     "env": "env",
     "setup": "ln -s ../../tools/pre-push .git/hooks/",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/loughmiller/enm.git"
+    "url": "https://github.com/loughmiller/esp.git"
   },
   "keywords": [
     "empty",
@@ -24,10 +24,11 @@
   "author": "Scott Loughmiller",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/loughmiller/enm/issues"
+    "url": "https://github.com/loughmiller/esp/issues"
   },
-  "homepage": "https://github.com/loughmiller/enm",
+  "homepage": "https://github.com/loughmiller/esp",
   "dependencies": {
+    "express": "4.13.3",
     "underscore": "1.7.0"
   },
   "devDependencies": {
